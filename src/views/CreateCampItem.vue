@@ -38,7 +38,7 @@
           <v-textarea
             outlined
             name="input-7-4"
-            label="outline"
+            label="description"
           ></v-textarea>    
 
           <v-card-action>
