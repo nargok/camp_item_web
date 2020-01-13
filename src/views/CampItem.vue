@@ -27,5 +27,23 @@
       </v-card-text>
     </v-card>
    </v-card>
+   <div>
+     {{items}}
+   </div>
   </v-app>
 </template>
+
+<script>
+import axios from 'axios'
+
+export default {
+  data() {
+    return {
+      items: null,
+    }
+  },
+  mounted() {
+    axios.get('http://localhost:3000/api/v1/items/').then(res => this.items = res)
+  }
+}
+</script>
