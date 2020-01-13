@@ -37,6 +37,11 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data() {
+    return {
+      greeting: 'welcome to camp items!'
+    }
   }
 }
 </script>
