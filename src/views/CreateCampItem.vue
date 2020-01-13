@@ -72,7 +72,9 @@ export default {
        name: this.name,
        price: this.price,
        description: this.description,
-     }).catch(res => console.log(res))
+     })
+     .then(() => this.$router.push('/'))
+     .catch(res => console.log(res))
    }
  }
 }
