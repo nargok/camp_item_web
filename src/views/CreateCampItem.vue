@@ -36,6 +36,7 @@
           ></v-text-field>
 
           <v-textarea
+            v-model="description"
             outlined
             name="input-7-4"
             label="description"
@@ -43,6 +44,7 @@
 
           <v-card-action>
             <v-btn
+              v-on:click="createItem"
             >
               Create
             </v-btn>
@@ -52,3 +54,26 @@
     </v-card>
   </v-app>
 </template>
+
+<script>
+import axios from 'axios'
+export default {
+  data() {
+    return {
+      name: '',
+      imageUrl: '',
+      price: 0,
+      description: '',
+    }
+  },
+  methods: {
+   createItem() {
+     axios.post('/api/v1/items/', {
+       name: this.name,
+       price: this.price,
+       description: this.description,
+     }).catch(res => console.log(res))
+   }
+ }
+}
+</script>
