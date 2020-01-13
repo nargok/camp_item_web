@@ -27,6 +27,14 @@
             label="image"
           ></v-text-field>
 
+          <v-text-field
+            v-model="price"
+            :counter="10"
+            label="Price"
+            prefix="¥"
+            required
+          ></v-text-field>
+
           <v-textarea
             outlined
             name="input-7-4"
