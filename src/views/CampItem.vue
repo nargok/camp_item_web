@@ -1,7 +1,8 @@
 
 <template>
   <v-app>
-    <v-card width="400px" class="mx-auto mt-5">
+    <v-card >
+      <v-card width="400px" class="mx-auto mt-5">
       <v-card-title>
         <h1 class="display-1">定番ギア「XXXの焚火台」</h1>
       </v-card-title>
@@ -25,5 +26,6 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iure laborum laudantium, pariatur soluta est cumque, reprehenderit veritatis blanditiis nisi, necessitatibus dolor eveniet doloribus explicabo magnam. Odit quasi consequuntur pariatur?</p>
       </v-card-text>
     </v-card>
+   </v-card>
   </v-app>
 </template>

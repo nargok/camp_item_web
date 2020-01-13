@@ -4,7 +4,9 @@
       color="white"
       dense
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-btn icon v-on:click="onClickPlus">
+        <v-icon>mdi-plus</v-icon>
+      </v-btn>
       <v-spacer></v-spacer>
       <v-toolbar-title>Camp Item</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -23,5 +25,10 @@ export default {
 
   data: () => ({
   }),
+  methods: {
+    onClickPlus() {
+      this.$router.push('/camp_items/new')
+    }
+  }
 };
 </script>
